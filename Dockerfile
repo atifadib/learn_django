@@ -10,7 +10,7 @@ RUN python3 -m pip install -r /requirements.txt
 
 RUN mkdir /app
 WORKDIR /app
-COPY . /app
+COPY ./app /app
 
 # Creating a new user and not using root to run the service
 # for security reasons. Limiting scopes of attack.
